@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: #00c4ff;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00c4ff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?video-games') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background: #181818;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.features div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    margin: 20px;
+    font-size: 1.1em;
+}
+
+/* Register Section */
+.register {
+    background: #0e0e0e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.register h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.register input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.register button {
+    padding: 10px;
+    background: #00c4ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.register button:hover {
+    background: #0098cc;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: #181818;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 10px;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .features div {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+}
